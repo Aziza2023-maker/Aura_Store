@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="أورا | AURA Beauty & Care - المتجر الرائد لمستحضرات العناية والتجميل الطبيعي واللافندر الفاخر. تركيبات عضوية معتمدة مخبرياً لبشرة أكثر نضارة وحيوية.">
-  <meta name="keywords" content="عناية بالبشرة, متجر تجميل, سيروم اللافندر, كريم الليل, مستحضرات عضوية, منتجات طبيعية, توريد صالونات, B2B">
+  <meta name="description"
+    content="أورا | AURA Beauty & Care - المتجر الرائد لمستحضرات العناية والتجميل الطبيعي واللافندر الفاخر. تركيبات عضوية معتمدة مخبرياً لبشرة أكثر نضارة وحيوية.">
+  <meta name="keywords"
+    content="عناية بالبشرة, متجر تجميل, سيروم اللافندر, كريم الليل, مستحضرات عضوية, منتجات طبيعية, توريد صالونات, B2B">
   <meta name="author" content="أورا للعناية والجمال">
   <title>أورا | AURA Beauty & Care - متجر العناية والتجميل الطبيعي الفاخر</title>
 
   <!-- أيقونة الموقع المفضلة (Favicon) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237C3AED'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z'/></svg>">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237C3AED'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z'/></svg>">
 
   <!-- الخطوط الرسمية والتنسيقات -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Cairo:wght@400;600;700;900&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <!-- شريط التنبيه عند انقطاع الاتصال بالإنترنت -->
-  <div class="offline-banner" id="offline-banner" role="alert">
+  <!-- <div class="offline-banner" id="offline-banner" role="alert">
     <span>⚠️ تنبيه: انقطع الاتصال بالإنترنت. يجري العمل في وضع عدم الاتصال (Offline Mode).</span>
-  </div>
+  </div> -->
 
   <!-- شريط الإعلانات الترويجي العلوي -->
-  <div class="announcement-bar" role="region" aria-label="شريط الإعلانات والعروض">
+  <!-- <div class="announcement-bar" role="region" aria-label="شريط الإعلانات والعروض">
     <span>
       ✨ شحن مجاني لكافة طلبات المملكة التي تتجاوز 300 ر.س | استخدمي كود <strong>AURA15</strong> لخصم 15% على أول طلب
     </span>
     <a href="#products" class="announcement-link">تسوقي الآن</a>
-  </div>
+  </div> -->
 
   <!-- شريط التنقل العلوي الثابت (Fixed / Sticky Header) -->
   <header class="site-header" id="site-header">
     <div class="container nav-container">
-      
+
       <!-- شعار المتجر والهوية البصرية -->
       <a href="index.html" class="brand-logo" aria-label="أورا - الصفحة الرئيسية">
         <div class="brand-icon-wrapper" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2a9 9 0 0 0-9 9c0 4.97 4.03 9 9 9s9-4.03 9-9a9 9 0 0 0-9-9z"></path>
             <path d="M12 6v6l4 2"></path>
           </svg>
@@ -66,7 +74,8 @@
       <div class="nav-actions">
         <!-- زر البحث السريع -->
         <button class="action-btn" id="search-trigger" aria-label="البحث عن منتج" title="بحث">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
@@ -74,15 +83,19 @@
 
         <!-- زر المفضلة التفاعلي مع العداد المباشر -->
         <button class="action-btn" id="wishlist-trigger" aria-label="عرض قائمة الرغبات والمفضلة" title="المفضلة">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+            </path>
           </svg>
           <span class="wishlist-count" id="wishlist-count" aria-live="polite">0</span>
         </button>
 
         <!-- زر سلة التسوق التفاعلي -->
         <button class="action-btn" id="cart-trigger" aria-label="فتح سلة التسوق" title="سلة التسوق">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <path d="M16 10a4 4 0 0 1-8 0"></path>
@@ -105,7 +118,7 @@
     <!-- القسم الرئيسي (Hero Header) الجذاب والحيوي -->
     <section class="hero-section" aria-labelledby="hero-heading">
       <div class="container hero-grid">
-        
+
         <!-- النصوص والنداء للإجراء (CTA) -->
         <div class="hero-content">
           <div class="hero-badge-pill">
@@ -118,13 +131,15 @@
           </h1>
 
           <p class="hero-description">
-            مستحضرات عضوية مستوحاة من زهور اللافندر وجوهر الأوركيد النقي. تركيبة معتمدة مخبرياً وخالية من المواد الكيميائية القاسية لتعزيز إشراقة بشرتكِ وتجديد شبابها بأمان مطلق.
+            مستحضرات عضوية مستوحاة من زهور اللافندر وجوهر الأوركيد النقي. تركيبة معتمدة مخبرياً وخالية من المواد
+            الكيميائية القاسية لتعزيز إشراقة بشرتكِ وتجديد شبابها بأمان مطلق.
           </p>
 
           <div class="hero-actions">
             <a href="#products" class="btn btn-primary" id="btn-hero-shop">
               <span>تسوقي التشكيلة الآن</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <line x1="19" y1="12" x2="5" y2="12"></line>
                 <polyline points="12 19 5 12 12 5"></polyline>
               </svg>
@@ -155,7 +170,8 @@
         <!-- العرض البصري بالهيدر وبطاقات الطفو التفاعلية -->
         <div class="hero-visual-wrapper">
           <div class="hero-main-image-card">
-            <img src="assets/images/hero_beauty.jpg" alt="مجموعة مستحضرات أورا للعناية الفاخرة بزهور اللافندر" width="600" height="450" loading="eager">
+            <img src="assets/images/hero_beauty.jpg" alt="مجموعة مستحضرات أورا للعناية الفاخرة بزهور اللافندر"
+              width="600" height="450" loading="eager">
           </div>
 
           <!-- كرت طافٍ علوي -->
@@ -183,37 +199,44 @@
     <!-- قسم عرض المنتجات (Care Products Showcase Grid - 4:3 Aspect Ratio) -->
     <section class="section-products" id="products" aria-labelledby="products-heading">
       <div class="container">
-        
+
         <header class="section-header">
           <span class="section-tag">عناية متكاملة وفائقة</span>
           <h2 id="products-heading" class="section-title">تشكيلة منتجات العناية باللافندر الملكي</h2>
           <p class="section-subtitle">
-            صُممت كل تركيبة بعناية فائقة من مستخلصات الزهور والزيوت النقية لتمنح بشرتكِ التغذية والنعومة والراحة الفورية.
+            صُممت كل تركيبة بعناية فائقة من مستخلصات الزهور والزيوت النقية لتمنح بشرتكِ التغذية والنعومة والراحة
+            الفورية.
           </p>
         </header>
 
         <!-- شبكة المنتجات (3 كروت تفاعلية بنسبة أبعاد 4:3 وأزرار ARIA) -->
         <div class="products-grid">
-          
+
           <!-- الكرت 1: سيروم اللافندر والأميثيست -->
           <article class="product-card" data-product-id="1">
             <div class="product-image-box">
-              <img src="assets/images/product_serum.jpg" alt="سيروم اللافندر والأميثيست للنضارة الفائقة من أورا" loading="lazy">
-              
+              <img src="assets/images/product_serum.jpg" alt="سيروم اللافندر والأميثيست للنضارة الفائقة من أورا"
+                loading="lazy">
+
               <div class="product-badges">
                 <span class="badge-tag badge-bestseller">الأكثر طلباً</span>
                 <span class="badge-tag badge-discount">خصم 23%</span>
               </div>
 
               <button class="btn-wishlist" aria-label="إضافة سيروم اللافندر إلى المفضلة" title="المفضلة">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                  </path>
                 </svg>
               </button>
 
               <div class="quick-view-overlay">
-                <button class="btn-quick-view" onclick="openQuickView('1')" aria-label="معاينة سريعة لسيروم اللافندر والأميثيست">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <button class="btn-quick-view" onclick="openQuickView('1')"
+                  aria-label="معاينة سريعة لسيروم اللافندر والأميثيست">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                   </svg>
@@ -241,8 +264,10 @@
                   <span class="price-old">320 ر.س</span>
                 </div>
 
-                <button class="btn-add-cart" data-id="1" onclick="addToCart('1')" aria-label="إضافة سيروم اللافندر والأميثيست إلى سلة التسوق بسعر 245 ريال سعودي">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <button class="btn-add-cart" data-id="1" onclick="addToCart('1')"
+                  aria-label="إضافة سيروم اللافندر والأميثيست إلى سلة التسوق بسعر 245 ريال سعودي">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <path d="M16 10a4 4 0 0 1-8 0"></path>
@@ -256,21 +281,27 @@
           <!-- الكرت 2: كريم الليل الملكي بالببتيدات -->
           <article class="product-card" data-product-id="2">
             <div class="product-image-box">
-              <img src="assets/images/product_cream.jpg" alt="كريم الليل الملكي بالببتيدات ومستخلص الأوركيد من أورا" loading="lazy">
-              
+              <img src="assets/images/product_cream.jpg" alt="كريم الليل الملكي بالببتيدات ومستخلص الأوركيد من أورا"
+                loading="lazy">
+
               <div class="product-badges">
                 <span class="badge-tag badge-discount">خصم 20%</span>
               </div>
 
               <button class="btn-wishlist" aria-label="إضافة كريم الليل إلى المفضلة" title="المفضلة">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                  </path>
                 </svg>
               </button>
 
               <div class="quick-view-overlay">
-                <button class="btn-quick-view" onclick="openQuickView('2')" aria-label="معاينة سريعة لكريم الليل الملكي">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <button class="btn-quick-view" onclick="openQuickView('2')"
+                  aria-label="معاينة سريعة لكريم الليل الملكي">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                   </svg>
@@ -298,8 +329,10 @@
                   <span class="price-old">360 ر.س</span>
                 </div>
 
-                <button class="btn-add-cart" data-id="2" onclick="addToCart('2')" aria-label="إضافة كريم الليل الملكي إلى سلة التسوق بسعر 290 ريال سعودي">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <button class="btn-add-cart" data-id="2" onclick="addToCart('2')"
+                  aria-label="إضافة كريم الليل الملكي إلى سلة التسوق بسعر 290 ريال سعودي">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <path d="M16 10a4 4 0 0 1-8 0"></path>
@@ -313,21 +346,27 @@
           <!-- الكرت 3: إكسير الزيوت العضوية -->
           <article class="product-card" data-product-id="3">
             <div class="product-image-box">
-              <img src="assets/images/product_oil.jpg" alt="إكسير الزيوت العضوية المعصور على البارد من أورا" loading="lazy">
-              
+              <img src="assets/images/product_oil.jpg" alt="إكسير الزيوت العضوية المعصور على البارد من أورا"
+                loading="lazy">
+
               <div class="product-badges">
                 <span class="badge-tag badge-organic">عضوي 100%</span>
               </div>
 
               <button class="btn-wishlist" aria-label="إضافة إكسير الزيوت إلى المفضلة" title="المفضلة">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                  </path>
                 </svg>
               </button>
 
               <div class="quick-view-overlay">
-                <button class="btn-quick-view" onclick="openQuickView('3')" aria-label="معاينة سريعة لإكسير الزيوت العضوية">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <button class="btn-quick-view" onclick="openQuickView('3')"
+                  aria-label="معاينة سريعة لإكسير الزيوت العضوية">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                   </svg>
@@ -355,8 +394,10 @@
                   <span class="price-old">275 ر.س</span>
                 </div>
 
-                <button class="btn-add-cart" data-id="3" onclick="addToCart('3')" aria-label="إضافة إكسير الزيوت العضوية إلى سلة التسوق بسعر 210 ريال سعودي">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <button class="btn-add-cart" data-id="3" onclick="addToCart('3')"
+                  aria-label="إضافة إكسير الزيوت العضوية إلى سلة التسوق بسعر 210 ريال سعودي">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <path d="M16 10a4 4 0 0 1-8 0"></path>
@@ -375,14 +416,16 @@
     <!-- قسم من نحن - الرؤية والقيم وإحصاءات الأداء المصغرة (About Us Section) -->
     <section class="section-about" id="about" aria-labelledby="about-heading">
       <div class="container about-grid">
-        
+
         <!-- تفاصيل الرؤية والقيم -->
         <div class="about-content">
           <span class="section-tag">رؤيتنا وقيمنا الراسخة</span>
           <h2 id="about-heading">أورا | شغف النقاء والابتكار في عالم العناية الفاخرة</h2>
-          
+
           <p>
-            انطلقت "أورا" برؤية واضحة تهدف إلى إعادة تعريف مفهوم العناية بالجمال في العالم العربي؛ من خلال تقديم منتجات تجمع بين نقاء المكونات النباتية العضوية وأحدث ما توصلت إليه أبحاث طب الجلدية التجميلي، لنمنح كل سيدة تجربة عناية استثنائية تحترم بشرتها والبيئة معاً.
+            انطلقت "أورا" برؤية واضحة تهدف إلى إعادة تعريف مفهوم العناية بالجمال في العالم العربي؛ من خلال تقديم منتجات
+            تجمع بين نقاء المكونات النباتية العضوية وأحدث ما توصلت إليه أبحاث طب الجلدية التجميلي، لنمنح كل سيدة تجربة
+            عناية استثنائية تحترم بشرتها والبيئة معاً.
           </p>
 
           <!-- قائمة القيم الأساسية -->
@@ -391,7 +434,8 @@
               <div class="value-icon" aria-hidden="true">🌱</div>
               <div class="value-text">
                 <h4>نقاء عضوي موثوق ومستدام</h4>
-                <p>نعتمد على مزارع لافندر معتمدة ومستخلصات خالية تماماً من الكبريتات، السيليكون، والملونات الاصطناعية.</p>
+                <p>نعتمد على مزارع لافندر معتمدة ومستخلصات خالية تماماً من الكبريتات، السيليكون، والملونات الاصطناعية.
+                </p>
               </div>
             </div>
 
@@ -419,7 +463,7 @@
 
         <!-- شبكة الإحصائيات المصغرة التفاعلية الحية -->
         <div class="stats-grid" id="about-stats" role="region" aria-label="إحصائيات إنجازات المتجر">
-          
+
           <div class="stat-box">
             <div class="stat-number" data-target="50000" data-prefix="+">+50,000</div>
             <div class="stat-label">عميلة واثقة وسعيدة بالنتائج</div>
@@ -447,15 +491,22 @@
 
     <!-- شريط ترويجي للانتقال لقطاع الأعمال B2B -->
     <section class="container" style="margin-block: 2rem 5rem;">
-      <div style="background: linear-gradient(135deg, var(--dark-900) 0%, var(--purple-950) 100%); border-radius: var(--radius-xl); padding: 3.5rem 3rem; color: #fff; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; box-shadow: var(--shadow-lg); border: 1px solid rgba(168, 85, 247, 0.2);">
+      <div
+        style="background: linear-gradient(135deg, var(--dark-900) 0%, var(--purple-950) 100%); border-radius: var(--radius-xl); padding: 3.5rem 3rem; color: #fff; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; box-shadow: var(--shadow-lg); border: 1px solid rgba(168, 85, 247, 0.2);">
         <div style="max-width: 620px;">
-          <span style="color: var(--gold-400); font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; display: block; margin-bottom: 0.5rem;">شراكات قطاع الأعمال والشركات (B2B)</span>
-          <h2 style="color: #fff; font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 800; margin-bottom: 0.85rem;">هل تديرين صالوناً، سبا فاخر أو عيادة تجميل؟</h2>
-          <p style="color: var(--purple-200); font-size: 1rem; line-height: 1.8;">نوفر لكم حلول توريد متكاملة، أسعار جملة تفضيلية تبدأ بخصومات 30% إلى 55%، مع إمكانية تصنيع العلامات الخاصة وشحن مبرد مؤمن.</p>
+          <span
+            style="color: var(--gold-400); font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; display: block; margin-bottom: 0.5rem;">شراكات
+            قطاع الأعمال والشركات (B2B)</span>
+          <h2 style="color: #fff; font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 800; margin-bottom: 0.85rem;">هل
+            تديرين صالوناً، سبا فاخر أو عيادة تجميل؟</h2>
+          <p style="color: var(--purple-200); font-size: 1rem; line-height: 1.8;">نوفر لكم حلول توريد متكاملة، أسعار
+            جملة تفضيلية تبدأ بخصومات 30% إلى 55%، مع إمكانية تصنيع العلامات الخاصة وشحن مبرد مؤمن.</p>
         </div>
-        <a href="b2b.html" class="btn btn-primary" style="background: linear-gradient(135deg, var(--gold-500), var(--gold-600)); color: #fff; box-shadow: 0 10px 25px -4px rgba(245, 158, 11, 0.4);">
+        <a href="b2b.html" class="btn btn-primary"
+          style="background: linear-gradient(135deg, var(--gold-500), var(--gold-600)); color: #fff; box-shadow: 0 10px 25px -4px rgba(245, 158, 11, 0.4);">
           <span>استكشفي حلول التوريد للشركات</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
@@ -470,7 +521,8 @@
   <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-drawer-title" role="dialog" aria-modal="true">
     <div class="cart-header">
       <h3 class="cart-title" id="cart-drawer-title">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
           <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <path d="M16 10a4 4 0 0 1-8 0"></path>
@@ -504,7 +556,8 @@
 
       <button class="btn btn-primary" id="btn-proceed-checkout" style="width: 100%; padding-block: 1rem;">
         <span>متابعة إتمام الطلب الآمن</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
           <line x1="19" y1="12" x2="5" y2="12"></line>
           <polyline points="12 19 5 12 12 5"></polyline>
         </svg>
@@ -518,11 +571,15 @@
 
   <!-- سلة المفضلة الجانبية (Wishlist Drawer) -->
   <div class="cart-drawer-backdrop" id="wishlist-backdrop" aria-hidden="true"></div>
-  <aside class="wishlist-drawer" id="wishlist-drawer" aria-labelledby="wishlist-drawer-title" role="dialog" aria-modal="true">
+  <aside class="wishlist-drawer" id="wishlist-drawer" aria-labelledby="wishlist-drawer-title" role="dialog"
+    aria-modal="true">
     <div class="cart-header">
       <h3 class="cart-title" id="wishlist-drawer-title">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #EF4444;">
-          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" style="color: #EF4444;">
+          <path
+            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+          </path>
         </svg>
         <span>قائمة المفضلة</span>
       </h3>
@@ -542,24 +599,29 @@
 
   <!-- نافذة البحث المباشر الفوري (Live Search Modal) -->
   <div class="search-modal-backdrop" id="search-modal-backdrop" aria-hidden="true">
-    <div class="search-modal-card" id="search-modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+    <div class="search-modal-card" id="search-modal" role="dialog" aria-modal="true"
+      aria-labelledby="search-modal-title">
       <div class="search-input-header">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--purple-600);">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" style="color: var(--purple-600);">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
-        <input type="text" id="live-search-input" class="search-input-field" placeholder="ابحثي عن سيروم، كريم ليل، زيوت عضوية، أو مكونات..." aria-label="البحث عن منتج">
+        <input type="text" id="live-search-input" class="search-input-field"
+          placeholder="ابحثي عن سيروم، كريم ليل، زيوت عضوية، أو مكونات..." aria-label="البحث عن منتج">
         <button class="btn-close-drawer" id="close-search-btn" aria-label="إغلاق البحث">✕</button>
       </div>
       <div class="search-results-box" id="search-results-box">
-        <p style="text-align: center; color: var(--text-muted); padding: 2rem;">اكتبي كلمة البحث لتظهر النتائج فوراً...</p>
+        <p style="text-align: center; color: var(--text-muted); padding: 2rem;">اكتبي كلمة البحث لتظهر النتائج فوراً...
+        </p>
       </div>
     </div>
   </div>
 
   <!-- نافذة إتمام الطلب والدفع الآمن المتكاملة (Checkout & Payment Gateway Modal) -->
   <div class="checkout-modal-backdrop" id="checkout-backdrop" aria-hidden="true">
-    <div class="checkout-modal-card" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-modal-title">
+    <div class="checkout-modal-card" id="checkout-modal" role="dialog" aria-modal="true"
+      aria-labelledby="checkout-modal-title">
       <div class="checkout-header">
         <h3 id="checkout-modal-title" style="font-size: 1.3rem; font-weight: 800; color: var(--dark-950);">
           إتمام الطلب والدفع الآمن 🔒
@@ -599,16 +661,19 @@
       <div class="test-runner-header">
         <div style="display: flex; align-items: center; gap: 0.6rem;">
           <span style="font-size: 1.3rem;">🧪</span>
-          <h3 style="color: #fff; font-size: 1.15rem; font-weight: 800;">حزمة الاختبارات الآلية الشاملة (AURA Test Suite)</h3>
+          <h3 style="color: #fff; font-size: 1.15rem; font-weight: 800;">حزمة الاختبارات الآلية الشاملة (AURA Test
+            Suite)</h3>
         </div>
-        <button class="btn-close-drawer" id="close-tests-btn" style="background: rgba(255,255,255,0.1); color: #fff;" aria-label="إغلاق لوحة الاختبارات">✕</button>
+        <button class="btn-close-drawer" id="close-tests-btn" style="background: rgba(255,255,255,0.1); color: #fff;"
+          aria-label="إغلاق لوحة الاختبارات">✕</button>
       </div>
 
       <div class="test-results-list" id="test-results-container">
         <!-- يتم توليد نتائج الاختبارات آلياً -->
       </div>
 
-      <div style="padding: 1.25rem 1.75rem; background: var(--bg-surface-alt); border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+      <div
+        style="padding: 1.25rem 1.75rem; background: var(--bg-surface-alt); border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
         <span id="test-suite-summary" style="font-weight: 700; color: var(--text-main);">جاري التحضير...</span>
         <button class="btn btn-primary" id="btn-rerun-tests" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">
           إعادة تشغيل الاختبارات
@@ -621,35 +686,43 @@
   <div class="modal-backdrop" id="quick-view-backdrop" aria-hidden="true">
     <div class="modal-card" id="quick-view-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
       <button class="btn-close-modal" id="close-modal-btn" aria-label="إغلاق نافذة المعاينة السريعة">✕</button>
-      
+
       <div class="modal-content-grid">
         <div class="modal-img-box">
           <img id="modal-img" src="" alt="">
         </div>
 
         <div class="modal-details">
-          <span class="product-category" id="modal-category" style="font-size: 0.85rem; margin-bottom: 0.5rem; display: block;"></span>
-          <h3 id="modal-title" style="font-size: 1.45rem; font-weight: 800; margin-bottom: 0.75rem; color: var(--dark-950);"></h3>
-          
+          <span class="product-category" id="modal-category"
+            style="font-size: 0.85rem; margin-bottom: 0.5rem; display: block;"></span>
+          <h3 id="modal-title"
+            style="font-size: 1.45rem; font-weight: 800; margin-bottom: 0.75rem; color: var(--dark-950);"></h3>
+
           <div style="display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 1.25rem;">
             <span id="modal-price" style="font-size: 1.6rem; font-weight: 900; color: var(--purple-700);"></span>
-            <span id="modal-old-price" style="font-size: 1rem; color: var(--text-muted); text-decoration: line-through;"></span>
+            <span id="modal-old-price"
+              style="font-size: 1rem; color: var(--text-muted); text-decoration: line-through;"></span>
           </div>
 
-          <p id="modal-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 1.25rem;"></p>
+          <p id="modal-desc"
+            style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 1.25rem;"></p>
 
-          <div style="background: var(--purple-50); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1rem; border: 1px solid var(--purple-200);">
-            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--purple-800); margin-bottom: 0.3rem;">المكونات الفعالة:</h4>
+          <div
+            style="background: var(--purple-50); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1rem; border: 1px solid var(--purple-200);">
+            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--purple-800); margin-bottom: 0.3rem;">المكونات
+              الفعالة:</h4>
             <p id="modal-ingredients" style="font-size: 0.82rem; color: var(--text-secondary);"></p>
           </div>
 
           <div style="margin-bottom: 1.5rem;">
-            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--dark-900); margin-bottom: 0.3rem;">طريقة الاستخدام:</h4>
+            <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--dark-900); margin-bottom: 0.3rem;">طريقة
+              الاستخدام:</h4>
             <p id="modal-usage" style="font-size: 0.82rem; color: var(--text-muted);"></p>
           </div>
 
           <button class="btn btn-primary" id="modal-add-btn" style="width: 100%; padding-block: 0.9rem;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
               <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
               <line x1="3" y1="6" x2="21" y2="6"></line>
               <path d="M16 10a4 4 0 0 1-8 0"></path>
@@ -665,46 +738,57 @@
   <footer class="site-footer" id="contact" role="contentinfo">
     <div class="container">
       <div class="footer-top-grid">
-        
+
         <!-- معلومات المتجر والهوية -->
         <div class="footer-brand">
           <div class="brand-logo" style="margin-bottom: 0.5rem;">
             <div class="brand-icon-wrapper" style="background: var(--purple-600);" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 2a9 9 0 0 0-9 9c0 4.97 4.03 9 9 9s9-4.03 9-9a9 9 0 0 0-9-9z"></path>
                 <path d="M12 6v6l4 2"></path>
               </svg>
             </div>
             <div class="brand-text">
-              <span class="brand-title" style="background: none; -webkit-text-fill-color: #fff; color: #fff;">أورا | AURA</span>
+              <span class="brand-title" style="background: none; -webkit-text-fill-color: #fff; color: #fff;">أورا |
+                AURA</span>
               <span class="brand-tagline" style="color: var(--purple-300);">العناية والتجميل الطبيعي</span>
             </div>
           </div>
 
           <p>
-            وجهتكِ الأولى للعناية الفاخرة المستخلصة من زهور اللافندر الطبيعية. نبتكر حلولاً جمالية نقية تناسب أرقى معايير الأناقة والجاذبية في المملكة والخليج.
+            وجهتكِ الأولى للعناية الفاخرة المستخلصة من زهور اللافندر الطبيعية. نبتكر حلولاً جمالية نقية تناسب أرقى
+            معايير الأناقة والجاذبية في المملكة والخليج.
           </p>
 
           <div class="social-links" aria-label="روابط منصات التواصل الاجتماعي">
             <a href="#" class="social-icon" aria-label="تابعنا على إنستغرام" title="إنستغرام">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
             </a>
             <a href="#" class="social-icon" aria-label="تابعنا على إكس (تويتر سابقاً)" title="منصة إكس">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
               </svg>
             </a>
             <a href="#" class="social-icon" aria-label="تواصل معنا عبر واتساب" title="واتساب">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                </path>
               </svg>
             </a>
             <a href="#" class="social-icon" aria-label="تابعنا على تيك توك" title="تيك توك">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
               </svg>
             </a>
@@ -744,15 +828,18 @@
 
           <form class="newsletter-form" id="newsletter-form" aria-label="الاشتراك في النشرة البريدية">
             <div class="newsletter-input-group">
-              <input type="email" class="newsletter-input" placeholder="أدخلي بريدكِ الإلكتروني..." required aria-label="عنوان البريد الإلكتروني">
+              <input type="email" class="newsletter-input" placeholder="أدخلي بريدكِ الإلكتروني..." required
+                aria-label="عنوان البريد الإلكتروني">
               <button type="submit" class="newsletter-btn" aria-label="تأكيد الاشتراك">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <line x1="22" y1="2" x2="11" y2="13"></line>
                   <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                 </svg>
               </button>
             </div>
-            <span style="font-size: 0.75rem; color: var(--purple-300);">نحن نحترم خصوصيتكِ ولا نرسل رسائل مزعجة مطلقاً.</span>
+            <span style="font-size: 0.75rem; color: var(--purple-300);">نحن نحترم خصوصيتكِ ولا نرسل رسائل مزعجة
+              مطلقاً.</span>
           </form>
         </div>
 
@@ -779,4 +866,5 @@
   <!-- السكربت التفاعلي -->
   <script src="js/main.js"></script>
 </body>
+
 </html>
