@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="أورا لقطاع الأعمال (B2B) - الشريك الاستراتيجي لتوريد مستحضرات العناية والتجميل الطبيعي للصالونات، السبا، وعيادات الجلدية بأسعار الجملة التفضيلية.">
+  <meta name="keywords" content="توريد صالونات, جملة مستحضرات تجميل, عناية بالبشرة بالجملة, علامة خاصة, private label, توريد عيادات">
+  <meta name="author" content="أورا لقطاع الأعمال">
+  <title>قطاع الأعمال والتوريد بالجملة (B2B) | أورا للعناية والجمال</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237C3AED'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- شريط إعلاني علوي خاص بقطاع الأعمال -->
+  <div class="announcement-bar" role="region" aria-label="إعلان قطاع الأعمال">
+    <span>
+      💼 عروض الربع السنوي للصالونات والعيادات: احصل على خصم إضافي 10% على عقود التوريد السنوية وعينات مجانية
+    </span>
+    <a href="#b2b-form-section" class="announcement-link">اطلب تسعيرك الآن</a>
+  </div>
+
+  <!-- الهيدر الثابت -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      
+      <!-- شعار المتجر -->
+      <a href="index.html" class="brand-logo" aria-label="أورا - العودة للرئيسية">
+        <div class="brand-icon-wrapper" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a9 9 0 0 0-9 9c0 4.97 4.03 9 9 9s9-4.03 9-9a9 9 0 0 0-9-9z"></path>
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">أورا | B2B</span>
+          <span class="brand-tagline">توريد الشركات والمراكز</span>
+        </div>
+      </a>
+
+      <!-- روابط التنقل -->
+      <nav class="nav-links" id="nav-links" aria-label="قائمة قطاع الأعمال">
+        <a href="index.html" class="nav-link">المتجر الرئيسي</a>
+        <a href="#benefits" class="nav-link">مزايا التوريد</a>
+        <a href="#tiers" class="nav-link">باقات الأسعار</a>
+        <a href="#b2b-form-section" class="nav-link active">طلب تسعير جملة</a>
+        <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
+      </nav>
+
+      <!-- إجراءات الهيدر -->
+      <div class="nav-actions">
+        <a href="#b2b-form-section" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.88rem;">
+          <span>طلب تسعير فوري</span>
+        </a>
+
+        <!-- زر القائمة للجوال -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="فتح قائمة التصفح" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- القسم الرئيسي لقطاع الأعمال (B2B Hero Section) -->
+    <section class="b2b-hero-section" aria-labelledby="b2b-hero-heading">
+      <div class="container b2b-hero-grid">
+        
+        <div class="b2b-hero-content">
+          <div class="hero-badge-pill" style="background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); color: var(--gold-400);">
+            <span class="badge-sparkle">✦</span>
+            <span>بوابة التوريد والشراكات المؤسسية</span>
+          </div>
+
+          <h1 id="b2b-hero-heading" class="b2b-hero-title">
+            شريككم الاستراتيجي لتوريد <span>مستحضرات العناية الفاخرة</span> للصالونات والعيادات
+          </h1>
+
+          <p class="b2b-hero-desc">
+            نقدم حلول توريد متكاملة، أسعار جملة تصاعدية، وتصنيع العلامات الخاصة (Private Label) بأعلى المعايير المخبرية المعتمدة، مع شحن مبرد مؤمن يغطي كافة أنحاء المملكة ودول الخليج.
+          </p>
+
+          <div style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
+            <a href="#b2b-form-section" class="btn btn-primary" style="background: linear-gradient(135deg, var(--gold-500), var(--gold-600)); color: #fff; box-shadow: 0 10px 25px -4px rgba(245, 158, 11, 0.4);">
+              <span>تقديم طلب تسعير وتوريد</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </a>
+
+            <a href="index.html" class="btn btn-secondary" style="background: rgba(255, 255, 255, 0.1); color: #fff; border-color: rgba(255, 255, 255, 0.3);">
+              <span>استكشاف كتالوج المنتجات</span>
+            </a>
+          </div>
+
+          <!-- شريط إحصائيات قطاع الأعمال -->
+          <div class="b2b-stats-bar">
+            <div class="b2b-stat-item">
+              <h3>+120</h3>
+              <p>صالون ومركز سبا شريك</p>
+            </div>
+            <div class="b2b-stat-item">
+              <h3>55%</h3>
+              <p>أعلى نسبة خصم جملة</p>
+            </div>
+            <div class="b2b-stat-item">
+              <h3>48 ساعة</h3>
+              <p>توصيل مبرد وسريع</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="b2b-hero-img-box">
+          <img src="assets/images/b2b_hero.jpg" alt="معرض توريد مستحضرات أورا لصالونات ومراكز التجميل الفاخرة" width="600" height="338">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- مزايا الشراكة والتوريد مع أورا (B2B Benefits) -->
+    <section class="section-b2b-benefits" id="benefits" aria-labelledby="benefits-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">لماذا تختار أورا؟</span>
+          <h2 id="benefits-heading" class="section-title">مزايا استثنائية مصممة لنمو منشأتكم</h2>
+          <p class="section-subtitle">
+            نساعدكم على تقديم تجربة عناية تفوق توقعات عميلاتكم مع تحقيق أعلى هوامش ربحية وتوفير لوجستي موثوق.
+          </p>
+        </header>
+
+        <div class="benefits-grid">
+          
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3>خصومات تصاعدية مجزية</h3>
+            <p>تبدأ خصوماتنا من 30% وتصل حتى 55% بحسب حجم الطلبات الدورية، مع تسهيلات دفع مرنة للمنشآت المعتمدة.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <h3>العلامات الخاصة (Private Label)</h3>
+            <p>إمكانية تعبئة وتغليف مستحضرات العناية بهوية وشعار علامتكم التجارية الخاصة وفق اشتراطات هيئة الغذاء والدواء.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3>سلاسل توريد وشحن مبرد</h3>
+            <p>مستودعات مجهزة وشحن مبرد متحكم بحرارته لضمان وصول السيرومات والزيوت بكامل نشاطها الحيوي أينما كنتم.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>مدير حسابات وتدريب متخصص</h3>
+            <p>نقدم ورش عمل وتدريباً مجانياً لأخصائيات التجميل في مركزكم على بروتوكولات الاستخدام لتحقيق أفضل النتائج.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- باقات التوريد المؤسسية (Tiered Packages) -->
+    <section class="section-b2b-tiers" id="tiers" aria-labelledby="tiers-heading">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-tag">باقات مرنة ومناسبة</span>
+          <h2 id="tiers-heading" class="section-title">باقات التوريد المؤسسية</h2>
+          <p class="section-subtitle">
+            اختاري الباقة الأكثر توافقاً مع حجم أعمالكِ واحصلي على مزايا تفضيلية فورية.
+          </p>
+        </header>
+
+        <div class="tiers-grid">
+          
+          <!-- باقة الصالونات والسبا -->
+          <div class="tier-card">
+            <h3 class="tier-name">باقة الصالونات ومراكز السبا</h3>
+            <p class="tier-target">مثالية للصالونات المتوسطة والمراكز الناشئة</p>
+            
+            <div class="tier-discount">
+              <span class="discount-rate">خصم 30%</span>
+              <span class="discount-desc">على كافة المنتجات بالكتالوج</span>
+            </div>
+
+            <div class="tier-features">
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>الحد الأدنى للطلب: 3,000 ر.س فقط</span>
+              </div>
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>عينات تجريبية مجانية لـ 5 مستحضرات</span>
+              </div>
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>شحن مجاني للطلبات فوق 5,000 ر.س</span>
+              </div>
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>كتيب بروتوكولات العناية باللافندر</span>
+              </div>
+            </div>
+
+            <a href="#b2b-form-section" class="btn btn-secondary" style="width: 100%;">
+              <span>اختيار باقة الصالونات</span>
+            </a>
+          </div>
+
+          <!-- باقة العيادات والمراكز المتقدمة (مميزة) -->
+          <div class="tier-card featured">
+            <span class="tier-badge">الأكثر اختياراً</span>
+            <h3 class="tier-name">باقة العيادات والمراكز الكبرى</h3>
+            <p class="tier-target">لعيادات التجميل، الجلدية وسلاسل الصالونات</p>
+            
+            <div class="tier-discount" style="background: var(--purple-100);">
+              <span class="discount-rate" style="color: var(--purple-800);">خصم 42%</span>
+              <span class="discount-desc">مع أحجام عبوات مخصصة للاستخدام الاحترافي</span>
+            </div>
+
+            <div class="tier-features">
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>الحد الأدنى للطلب: 10,000 ر.س</span>
+              </div>
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>عبوات سعة 500 مل / 1 لتر للعيادات</span>
+              </div>
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>مدير حساب مباشر واستشارات فورية</span>
+              </div>
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>شحن مبرد مجاني خلال 48 ساعة</span>
+              </div>
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>جلسة تدريب حضورية أو افتراضية للموظفات</span>
+              </div>
+            </div>
+
+            <a href="#b2b-form-section" class="btn btn-primary" style="width: 100%;">
+              <span>اختيار باقة العيادات</span>
+            </a>
+          </div>
+
+          <!-- باقة التوزيع الحصري والكميات الكبرى -->
+          <div class="tier-card">
+            <h3 class="tier-name">باقة التوزيع الحصري والفنادق</h3>
+            <p class="tier-target">للفنادق الفاخرة، المتاجر الكبرى والوكلاء</p>
+            
+            <div class="tier-discount">
+              <span class="discount-rate">خصم 55%</span>
+              <span class="discount-desc">عقود توريد سنوية وتصنيع خاص</span>
+            </div>
+
+            <div class="tier-features">
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>الحد الأدنى للطلب: 30,000 ر.س</span>
+              </div>
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>إمكانية طباعة الهوية الخاصة (Private Label)</span>
+              </div>
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>تسهيلات دفع بالأجل بعد فحص الائتمان</span>
+              </div>
+              <div class="tier-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>أولوية مطلقة في حجز الدفعات الجديدة</span>
+              </div>
+            </div>
+
+            <a href="#b2b-form-section" class="btn btn-secondary" style="width: 100%;">
+              <span>طلب اتفاقية التوزيع</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- نموذج طلب عروض الأسعار والتوريد بالجملة (B2B RFQ Form) -->
+    <section class="section-b2b-form" id="b2b-form-section" aria-labelledby="form-heading">
+      <div class="container">
+        
+        <div class="form-wrapper-box">
+          <header class="form-header">
+            <span class="section-tag">طلب توريد فوري</span>
+            <h2 id="form-heading">نموذج طلب عروض الأسعار والشراكة بالجملة</h2>
+            <p>
+              يُرجى تعبئة بيانات المنشأة بدقة، وسيقوم مستشار قطاع الأعمال بالتواصل معكم وتقديم جدول الأسعار النهائي خلال ساعتي عمل.
+            </p>
+          </header>
+
+          <form id="b2b-rfq-form" aria-label="نموذج طلب تسعير الجملة">
+            <div class="form-grid">
+              
+              <!-- اسم المنشأة -->
+              <div class="form-group">
+                <label for="company-name" class="form-label">اسم المنشأة / الصالون / العيادة *</label>
+                <input type="text" id="company-name" class="form-input" placeholder="مثال: مجمع أوركيد الطبي للتجميل" required>
+              </div>
+
+              <!-- السجل التجاري أو الرقم الضريبي -->
+              <div class="form-group">
+                <label for="cr-number" class="form-label">رقم السجل التجاري / وثيقة العمل الحر *</label>
+                <input type="text" id="cr-number" class="form-input" placeholder="مثال: 1010XXXXXX" required>
+              </div>
+
+              <!-- اسم المسؤول -->
+              <div class="form-group">
+                <label for="contact-person" class="form-label">اسم الشخص المسؤول *</label>
+                <input type="text" id="contact-person" class="form-input" placeholder="الاسم الثلاثي" required>
+              </div>
+
+              <!-- رقم الجوال للتواصل -->
+              <div class="form-group">
+                <label for="phone-number" class="form-label">رقم الجوال (واتساب) *</label>
+                <input type="tel" id="phone-number" class="form-input" placeholder="05XXXXXXXX" required>
+              </div>
+
+              <!-- البريد الإلكتروني المؤسسي -->
+              <div class="form-group">
+                <label for="b2b-email" class="form-label">البريد الإلكتروني للعمل *</label>
+                <input type="email" id="b2b-email" class="form-input" placeholder="info@company.com" required>
+              </div>
+
+              <!-- المدينة والمنطقة -->
+              <div class="form-group">
+                <label for="city" class="form-label">المدينة والمنطقة *</label>
+                <select id="city" class="form-select" required>
+                  <option value="">اختاري المدينة...</option>
+                  <option value="الرياض">الرياض</option>
+                  <option value="جدة">جدة</option>
+                  <option value="الدمام والخبر">الدمام والخبر</option>
+                  <option value="مكة المكرمة">مكة المكرمة</option>
+                  <option value="المدينة المنورة">المدينة المنورة</option>
+                  <option value="القصيم">القصيم</option>
+                  <option value="أبها وخميس مشيط">أبها وخميس مشيط</option>
+                  <option value="أخرى">مدينة أخرى / دول الخليج</option>
+                </select>
+              </div>
+
+              <!-- نوع النشاط -->
+              <div class="form-group">
+                <label for="business-type" class="form-label">نوع النشاط التجاري *</label>
+                <select id="business-type" class="form-select" required>
+                  <option value="">حددي نوع النشاط...</option>
+                  <option value="صالون تجميل نسائي">صالون تجميل نسائي</option>
+                  <option value="مركز سبا واستجمام">مركز سبا واستجمام</option>
+                  <option value="عيادة جلدية وتجميل">عيادة جلدية وتجميل</option>
+                  <option value="متجر مستحضرات تجزئة">متجر مستحضرات تجزئة</option>
+                  <option value="فندق أو منتجع">فندق أو منتجع سياحي</option>
+                  <option value="أخرى">أخرى</option>
+                </select>
+              </div>
+
+              <!-- حجم التوريد المتوقع شهرياً -->
+              <div class="form-group">
+                <label for="order-volume" class="form-label">ميزانية التوريد المتوقعة شهرياً *</label>
+                <select id="order-volume" class="form-select" required>
+                  <option value="">حددي الميزانية التقريبية...</option>
+                  <option value="3,000 - 10,000">3,000 - 10,000 ر.س</option>
+                  <option value="10,000 - 30,000">10,000 - 30,000 ر.س (باقة العيادات)</option>
+                  <option value="30,000 - 75,000">30,000 - 75,000 ر.س</option>
+                  <option value="أكثر من 75,000">أكثر من 75,000 ر.س (عقد توزيع حصري)</option>
+                </select>
+              </div>
+
+              <!-- المنتجات المستهدفة وملاحظات -->
+              <div class="form-group full-width">
+                <label for="form-notes" class="form-label">المنتجات المطلوبة، طلب عينات تجريبية، أو أي متطلبات خاصة:</label>
+                <textarea id="form-notes" class="form-textarea" placeholder="مثال: نرغب في توريد 100 عبوة سيروم اللافندر و50 كريم ليل، بالإضافة إلى تجربة عينات للزيوت العضوية..."></textarea>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding-block: 1.15rem; font-size: 1.05rem;">
+              <span>إرسال طلب التوريد والحصول على عرض الأسعار</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+
+            <p style="text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem;">
+              🔒 بيانات منشأتكم مشفرة ومحمية ولن يتم مشاركتها مع أي طرف ثالث بأي حال.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة الخاصة بالشركات (B2B FAQ) -->
+    <section class="container" id="faq" style="margin-bottom: 6rem;">
+      <header class="section-header">
+        <span class="section-tag">استفسارات متكررة</span>
+        <h2 class="section-title">الأسئلة الشائعة لقطاع الأعمال</h2>
+      </header>
+
+      <div style="max-width: 800px; margin-inline: auto; display: flex; flex-direction: column; gap: 1rem;">
+        
+        <details style="background: var(--bg-surface); padding: 1.25rem 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); cursor: pointer;">
+          <summary style="font-weight: 700; color: var(--dark-950); font-size: 1.05rem;">هل تتوفر عينات تجريبية مجانية قبل اعتماد الطلب؟</summary>
+          <p style="margin-top: 0.85rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+            نعم بالتأكيد! بعد استلام طلبكم ومطابقة بيانات السجل التجاري، نرسل حقيبة عينات تجريبية فاخرة تشمل منتجاتنا الأكثر طلباً لاختبارها في مركزكم قبل توقيع عقد التوريد.
+          </p>
+        </details>
+
+        <details style="background: var(--bg-surface); padding: 1.25rem 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); cursor: pointer;">
+          <summary style="font-weight: 700; color: var(--dark-950); font-size: 1.05rem;">ما هي شروط تصنيع العلامات الخاصة (Private Label)؟</summary>
+          <p style="margin-top: 0.85rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+            يتطلب تصنيع العلامة الخاصة حداً أدنى يبدأ من 500 وحدة للمنتج، ونتكفل بكافة إجراءات التصميم والتعبئة واستخراج التراخيص والإدراج في منصة "طمني / الغذاء والدواء".
+          </p>
+        </details>
+
+        <details style="background: var(--bg-surface); padding: 1.25rem 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); cursor: pointer;">
+          <summary style="font-weight: 700; color: var(--dark-950); font-size: 1.05rem;">كم تستغرق مدة شحن وتوصيل طلبيات الجملة؟</summary>
+          <p style="margin-top: 0.85rem; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
+            يتم تجهيز الطلبات وشحنها في حاويات مبردة خلال 24 إلى 48 ساعة داخل المدن الرئيسية (الرياض، جدة، الشرقية)، وخلال 3 إلى 5 أيام عمل لبقية مناطق المملكة والخليج العربي.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- الفووتر المتناسق -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 0.5rem;">
+            <div class="brand-icon-wrapper" style="background: var(--purple-600);" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a9 9 0 0 0-9 9c0 4.97 4.03 9 9 9s9-4.03 9-9a9 9 0 0 0-9-9z"></path>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="background: none; -webkit-text-fill-color: #fff; color: #fff;">أورا | B2B</span>
+              <span class="brand-tagline" style="color: var(--purple-300);">توريد الشركات والمراكز</span>
+            </div>
+          </div>
+
+          <p>
+            حلول التوريد والتوزيع الحصري لمستحضرات العناية الفاخرة المعتمدة. شراكتكم معنا تضمن جودة المنتجات ورضا العميلات المستمر.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>بوابة الشركات</h3>
+          <ul class="footer-links-list">
+            <li><a href="b2b.html#benefits">مزايا التوريد المؤسسي</a></li>
+            <li><a href="b2b.html#tiers">باقات الأسعار والخصومات</a></li>
+            <li><a href="b2b.html#b2b-form-section">طلب تسعير جملة فوري</a></li>
+            <li><a href="b2b.html#faq">الأسئلة الشائعة للشركات</a></li>
+            <li><a href="index.html">المتجر الرئيسي للتجزئة</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>تواصل وإدارة التوريد</h3>
+          <ul class="footer-links-list">
+            <li><a href="#">هاتف قطاع الأعمال: 920088990</a></li>
+            <li><a href="#">واتساب الشراكات: 0501234567</a></li>
+            <li><a href="#">البريد: b2b@auracare.sa</a></li>
+            <li><a href="#">ساعات العمل: 9 ص - 6 م (الأحد - الخميس)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>الكتالوج المؤسسي</h3>
+          <p style="color: var(--purple-200); font-size: 0.88rem; margin-bottom: 1.25rem;">
+            اشتركي لتصلكم تحديثات أسعار التوريد وعروض الدفعات الربع سنوية المسبقة.
+          </p>
+          <div style="background: rgba(255, 255, 255, 0.08); padding: 1rem; border-radius: var(--radius-md); border: 1px solid rgba(255, 255, 255, 0.15);">
+            <div style="font-weight: 700; color: var(--gold-400); font-size: 0.95rem; margin-bottom: 0.25rem;">📄 كتالوج منتجات 2026</div>
+            <div style="font-size: 0.8rem; color: var(--purple-200);">شامل التحاليل المخبرية وهوامش الأرباح للمراكز</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          جميع الحقوق محفوظة © 2026 لشركة أورا للعناية والتجميل - قطاع الأعمال والشراكات | س.ت: 1010894521
+        </div>
+        <div class="payment-badges" aria-label="أنظمة السداد المؤسسي">
+          <span class="pay-badge">التحويل البنكي المعتمد</span>
+          <span class="pay-badge">مدى mada</span>
+          <span class="pay-badge">سداد SADAD</span>
+          <span class="pay-badge">Visa Corporate</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- السكربت التفاعلي -->
+  <script src="js/main.js"></script>
+</body>
+</html>
